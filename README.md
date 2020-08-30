@@ -1,33 +1,36 @@
 # Plagiarism Project, Machine Learning Deployment
 
-This repository contains code and associated files for deploying a plagiarism detector using AWS SageMaker.
+This repository contains code and associated files for deploying a plagiarism detector using AWS
 
-## Project Overview
+## Files included in this repository and their use
+Main Notebook.ipynb - JupiterNotebook containing all code used in project
 
-In this project, you will be tasked with building a plagiarism detector that examines a text file and performs binary classification; labeling that file as either *plagiarized* or *not*, depending on how similar that text file is to a provided source text. Detecting plagiarism is an active area of research; the task is non-trivial and the differences between paraphrased answers and original work are often not so obvious.
+Proposal.pdf - Proposal for Capstone Project
 
-This project will be broken down into three main notebooks:
+Project Report.pdf - A detailed report of all steps of the project
 
-**Notebook 1: Data Exploration**
-* Load in the corpus of plagiarism text data.
-* Explore the existing data features and the data distribution.
-* This first notebook is **not** required in your final project submission.
+housing.csv - the dataset used for the project
 
-**Notebook 2: Feature Engineering**
+LICENSE - MIT license for this project
 
-* Clean and pre-process the text data.
-* Define features for comparing the similarity of an answer text and a source text, and extract similarity features.
-* Select "good" features, by analyzing the correlations between different features.
-* Create train/test `.csv` files that hold the relevant features and class labels for train/test data points.
+README - this file
 
-**Notebook 3: Train and Deploy Your Model in SageMaker**
 
-* Upload your train/test feature data to S3.
-* Define a binary classification model and a training script.
-* Train your model and deploy it using SageMaker.
-* Evaluate your deployed classifier.
+## Main Notebook uses Python 3.6 and the following libraries
+Pandas
 
----
+Matplotlib
 
-Please see the [README](https://github.com/udacity/ML_SageMaker_Studies/tree/master/README.md) in the root directory for instructions on setting up a SageMaker notebook and downloading the project files (as well as the other notebooks).
+SKlearn
+
+Numpy
+
+
+# Project Overview
+In this project, I will be able to predict the sale price of homes in Boston. 
+I will be able to do this by using a data set of 14 measurements, recorded on 506 homes, by the UCI machine learning repository in 1978.
+I will examine the relationships between these measurements, first with visualizations of these relationships, and then,, with multiple regression machine learning algorithms. I will use RMSE as my evaluation metric with 10-fold Cross Validation.  I will graph the results, and then I will hyperparameter tune the highest performing models, and finally, use an unseen test set of 20% of the data, to choose the highest performing model overall.
+
+Web link to Boston Housing Dataset:
+https://www.kaggle.com/c/boston-housing
 
